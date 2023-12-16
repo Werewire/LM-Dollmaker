@@ -5,26 +5,26 @@
 
 <section class="avi" id="avatarSection">
 
-  <canvas id="avatarCanvas" height="600px" width="800px"alt="cartoon portrait"/>
+  <canvas id="avatarCanvas" height="600px" width="800px"alt="dragon portrait"/>
 
   <img src="lineart/Earth.png" id="lines-earth" class="lineart"/>
-  <img src="lineart/Fire.png" id="body-ghost" class="lineart"/>
-  <img src="lineart/Thunder.png" id="body-purple" class="lineart"/>
-  <img src="lineart/Water.png" id="body-soft" class="lineart"/>
-  <img src="lineart/Wood.png" id="body-soft" class="lineart"/>
+  <img src="lineart/Fire.png" id="lines-fire" class="lineart"/>
+  <img src="lineart/Thunder.png" id="lines-thunder" class="lineart"/>
+  <img src="lineart/Water.png" id="lines-water" class="lineart"/>
+  <img src="lineart/Wood.png" id="lines-wood" class="lineart"/>
   <img src="lineart/Wyvern.png" id="lines-wyvern" class="lineart"/>
 
-  <img src="markings/wyvern/merle/gr.png" id="merle-green" class="marking"/>
-  <img src="avatarImages/mouth-chewy.png" id="mouth-chewy" class="marking"/>
-  <img src="avatarImages/mouth-jagged.png" id="mouth-jagged" class="marking"/>
-  <img src="avatarImages/mouth-smile.png" id="mouth-smile" class="marking"/>
-  <img src="avatarImages/mouth-surprised.png" id="mouth-surprised" class="marking"/>
+  <img src="bases/wyvern/gr.png" id="wyvern-green" class="base"/>
+  <img src="avatarImages/mouth-chewy.png" id="mouth-chewy" class="base"/>
+  <img src="avatarImages/mouth-jagged.png" id="mouth-jagged" class="base"/>
+  <img src="avatarImages/mouth-smile.png" id="mouth-smile" class="base"/>
+  <img src="avatarImages/mouth-surprised.png" id="mouth-surprised" class="base"/>
 
-  <img src="avatarImages/hair-crown.png" id="hair-crown" class="socks"/>
-  <img src="avatarImages/hair-curly.png" id="hair-curly" class="socks"/>
-  <img src="avatarImages/hair-long.png" id="hair-long" class="socks"/>
-  <img src="avatarImages/hair-spiky.png" id="hair-spiky" class="socks"/>
-  <img src="avatarImages/hair-sprout.png" id="hair-sprout" class="socks"/>
+  <img src="avatarImages/hair-crown.png" id="hair-crown" class="marking"/>
+  <img src="avatarImages/hair-curly.png" id="hair-curly" class="marking"/>
+  <img src="avatarImages/hair-long.png" id="hair-long" class="marking"/>
+  <img src="avatarImages/hair-spiky.png" id="hair-spiky" class="marking"/>
+  <img src="avatarImages/hair-sprout.png" id="hair-sprout" class="marking"/>
 
   <img src="avatarImages/eyes-diamond.png" id="eyes-diamond" class="eyes"/>
   <img src="avatarImages/eyes-excited.png" id="eyes-excited"class="eyes"/>
@@ -34,27 +34,28 @@
 </section>
 
 <div class = "menu">
-  <div class="style-category" id = "base-colors">
+  <div class="style-category" id = "lineart">
     <span class="style-category__label">
       body
     </span>
+    <button type="button" onClick="toggleVisibility('lines-earth');"> Earth </button>
+    <button type="button" onClick="toggleVisibility('lines-fire');"> Fire </button>
+    <button type="button" onClick="toggleVisibility('lines-thunder');"> Thunder </button>
+    <button type="button" onClick="toggleVisibility('lines-water');"> Water </button>
+    <button type="button" onClick="toggleVisibility('lines-wood');"> Wood </button>
     <button type="button" onClick="toggleVisibility('lines-wyvern');"> Wyvern </button>
-    <button type="button" onClick="toggleVisibility('body-ghost');"> ghost </button>
-    <button type="button" onClick="toggleVisibility('body-purple');"> purple </button>
-    <button type="button" onClick="toggleVisibility('body-soft');"> soft </button>
-    <button type="button" onClick="toggleVisibility('body-waving');"> waving </button>
   </div>
-  <div class="style-category" id="markings">
+  <div class="style-category" id="primbase">
     <span class="style-category__label">
       eyes
     </span>
-    <button type="button" onClick="toggleVisibility('merle-green');"> Green Merle </button>
+    <button type="button" onClick="toggleVisibility('wyvern-green');"> Green Merle </button>
     <button type="button" onClick="toggleVisibility('eyes-excited');"> excited </button>
     <button type="button" onClick="toggleVisibility('eyes-glasses');"> glasses </button>
     <button type="button" onClick="toggleVisibility('eyes-intense');"> intense </button>
     <button type="button" onClick="toggleVisibility('eyes-modest');"> modest </button>
   </div>
-  <div class="style-category" id="mouths">
+  <div class="style-category" id="markings">
     <span class="style-category__label">
       mouth
     </span>
