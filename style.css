@@ -5,12 +5,12 @@
 #avatarSection {
   position: relative;
   margin: auto;
-  height:400px;
-  width:400px;
+  height:600px;
+  width:800px;
   border-style: solid;
   border-radius: 5px;
   border-color: #4a4a4a;
-  background-color: lightblue;
+  background-color: #FFF;
   border-width: thick;
 }
 
