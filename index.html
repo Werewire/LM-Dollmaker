@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src ="avatarMaker.js"></script>
+<link rel="stylesheet" href="style.css"/>
+
+<section class="avi" id="avatarSection">
+
+  <canvas id="avatarCanvas" height="400px" width="400px"alt="cartoon portrait"/>
+
+  <img src="avatarImages/body-angular.png" id="body-angular" class="body"/>
+  <img src="avatarImages/body-ghost.png" id="body-ghost" class="body"/>
+  <img src="avatarImages/body-purple.png" id="body-purple" class="body"/>
+  <img src="avatarImages/body-soft.png" id="body-soft" class="body"/>
+  <img src="avatarImages/body-waving.png" id="body-waving" class="body"/>
+
+  <img src="avatarImages/mouth-animal.png" id="mouth-animal" class="mouth"/>
+  <img src="avatarImages/mouth-chewy.png" id="mouth-chewy" class="mouth"/>
+  <img src="avatarImages/mouth-jagged.png" id="mouth-jagged" class="mouth"/>
+  <img src="avatarImages/mouth-smile.png" id="mouth-smile" class="mouth"/>
+  <img src="avatarImages/mouth-surprised.png" id="mouth-surprised" class="mouth"/>
+
+  <img src="avatarImages/hair-crown.png" id="hair-crown" class="hair"/>
+  <img src="avatarImages/hair-curly.png" id="hair-curly" class="hair"/>
+  <img src="avatarImages/hair-long.png" id="hair-long" class="hair"/>
+  <img src="avatarImages/hair-spiky.png" id="hair-spiky" class="hair"/>
+  <img src="avatarImages/hair-sprout.png" id="hair-sprout" class="hair"/>
+
+  <img src="avatarImages/eyes-diamond.png" id="eyes-diamond" class="eyes"/>
+  <img src="avatarImages/eyes-excited.png" id="eyes-excited"class="eyes"/>
+  <img src="avatarImages/eyes-glasses.png" id="eyes-glasses"class="eyes"/>
+  <img src="avatarImages/eyes-intense.png" id="eyes-intense"class="eyes"/>
+  <img src="avatarImages/eyes-modest.png" id="eyes-modest"class="eyes"/>
+</section>
+
+<div class = "menu">
+  <div class="style-category" id = "bodies">
+    <span class="style-category__label">
+      body
+    </span>
+    <button type="button" onClick="toggleVisibility('body-angular');"> angular </button>
+    <button type="button" onClick="toggleVisibility('body-ghost');"> ghost </button>
+    <button type="button" onClick="toggleVisibility('body-purple');"> purple </button>
+    <button type="button" onClick="toggleVisibility('body-soft');"> soft </button>
+    <button type="button" onClick="toggleVisibility('body-waving');"> waving </button>
+  </div>
+  <div class="style-category" id="eyes">
+    <span class="style-category__label">
+      eyes
+    </span>
+    <button type="button" onClick="toggleVisibility('eyes-diamond');"> diamond </button>
+    <button type="button" onClick="toggleVisibility('eyes-excited');"> excited </button>
+    <button type="button" onClick="toggleVisibility('eyes-glasses');"> glasses </button>
+    <button type="button" onClick="toggleVisibility('eyes-intense');"> intense </button>
+    <button type="button" onClick="toggleVisibility('eyes-modest');"> modest </button>
+  </div>
+  <div class="style-category" id="mouths">
+    <span class="style-category__label">
+      mouth
+    </span>
+    <button type="button" onClick="toggleVisibility('mouth-animal');"> animal </button>
+    <button type="button" onClick="toggleVisibility('mouth-chewy');"> chewy </button>
+    <button type="button" onClick="toggleVisibility('mouth-jagged');"> jagged </button>
+    <button type="button" onClick="toggleVisibility('mouth-smile');"> smile </button>
+    <button type="button" onClick="toggleVisibility('mouth-surprised');"> surprised </button>
+  </div>
+  <div class="style-category" id="hairstyles">
+    <span class="style-category__label">
+      hair
+    </span>
+    <button type="button" onClick="toggleVisibility('hair-crown');"> crown </button>
+    <button type="button" onClick="toggleVisibility('hair-curly');"> curly </button>
+    <button type="button" onClick="toggleVisibility('hair-long');"> long </button>
+    <button type="button" onClick="toggleVisibility('hair-spiky');"> spiky </button>
+    <button type="button" onClick="toggleVisibility('hair-sprout');"> sprout </button>
+  </div>
+  <button id="randomButton" type="button" onClick="randomizeAvatar()"> Random </button>
+</div>
+
+<div class = "menu">
+
+</div>
+
+<footer>
+  <div id="links">
+    Made by: Alice Quintanilla
+    (<a href="https://github.com/alicequint">Github</a>)
+  </div>
+</footer>
+
+</html>
