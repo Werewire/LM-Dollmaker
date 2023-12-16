@@ -3,7 +3,7 @@ let avatar = []
 
 //for use in randomizeAvatar()
 let avatarImageIDs = [
-  ["lines-wyvern","merle-green","wyv-eyes-yellow","socks-sxxx-gr","socks-xSxx-gr"],
+  ["lines-earth","lines-fire","lines-thunder","lines-water","lines-wood","lines-wyvern","wyvern-green","merle-green","wyv-eyes-yellow","socks-sxxx-gr","socks-xSxx-gr"],
   ["eyes-diamond","eyes-excited","eyes-glasses","eyes-intense","eyes-modest"],
   ["mouth-animal","mouth-chewy","mouth-jagged","mouth-smile","mouth-surprised"],
   ["hair-crown","hair-curly","hair-long","hair-spiky","hair-sprout"],
