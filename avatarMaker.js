@@ -3,7 +3,7 @@ let avatar = []
 
 //for use in randomizeAvatar()
 let avatarImageIDs = [
-  ["body-angular","body-ghost","body-purple","body-soft","body-waving"],
+  ["lines-wyvern","merle-green","wyv-eyes-yellow","socks-sxxx-gr","socks-xSxx-gr"],
   ["eyes-diamond","eyes-excited","eyes-glasses","eyes-intense","eyes-modest"],
   ["mouth-animal","mouth-chewy","mouth-jagged","mouth-smile","mouth-surprised"],
   ["hair-crown","hair-curly","hair-long","hair-spiky","hair-sprout"],
@@ -28,10 +28,14 @@ function redrawAvatar(){
   //sort avatar so that the images get stacked correctly...
   let sortedAvatar = [null,null,null,null]
   avatar.forEach((element) => {
-    if(element.className == 'body') sortedAvatar[0]=element
-    else if(element.className =='hair') sortedAvatar[1]=element
-    else if(element.className == 'mouth') sortedAvatar[2]=element
-    else if(element.className == 'eyes') sortedAvatar[3]=element
+    if(element.className == 'base') sortedAvatar[0]=element
+    else if(element.className =='marking') sortedAvatar[1]=element
+    else if(element.className == 'socks') sortedAvatar[2]=element
+    else if(element.className == 'mutation') sortedAvatar[3]=element
+    else if(element.className == 'eyes') sortedAvatar[4]=element
+    else if(element.className == 'albino') sortedAvatar[5]=element
+    else if(element.className == 'lineart') sortedAvatar[6]=element
+    else if(element.className == 'background') sortedAvatar[6]=element
   });
   sortedAvatar.forEach((element) => {
     if(element != null)
